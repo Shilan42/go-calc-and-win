@@ -72,8 +72,8 @@ func getUserAttack() int {
 }
 
 func runGame() bool {
-	enemyHealth := setEnemyHealth()    //105
-	userTotalAttack := getUserAttack() //168
+	enemyHealth := setEnemyHealth()
+	userTotalAttack := getUserAttack()
 	fmt.Println("Тобой нанесён урон противнику равный", userTotalAttack)
 	fmt.Println("Очки здоровья противника до твоей атаки", enemyHealth)
 	if compareValues(enemyHealth, userTotalAttack) {
